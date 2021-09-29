@@ -3,7 +3,7 @@ session_start();
 if (isset($_SESSION['userid'])) {
 
     header('Location:home.php');
-} else {
+ else {
     if (isset($_GET['error'])) {
         if ($_GET['error'] == "emptyinput") {
             echo '<script>alert("Empty Input");</script>';
